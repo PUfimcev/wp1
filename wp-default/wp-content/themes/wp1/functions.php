@@ -35,3 +35,12 @@ function wp1_alter_title($title): string
 }
 
 add_filter('pre_get_document_title', 'wp1_alter_title');
+
+## Удаляет "Рубрика: ", "Метка: " и т.д. из заголовка архива
+add_filter( 'get_the_archive_title', function( $title ){
+    return preg_replace('~^[^:]+: ~', '', $title );
+});
+
+add_filter( 'excerpt_length', function(){
+    return 20;
+} );
