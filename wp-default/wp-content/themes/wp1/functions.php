@@ -60,8 +60,27 @@ add_action('load-assets-in-footer', 'load_assets_in_footer');
 
 function add_one_day($date): string
 {
-    $date = strtotime($date);
-    $date = strtotime('+1 day', $date);
-    return date('d F Y', $date);
+    return date('d F Y',  strtotime($date . ' +1 day'));
 }
-add_filter('the_date', 'add_one_day');
+add_filter('plus_one_day', 'add_one_day');
+
+function wp1_current_day_shortcode(): string
+{
+    $current_day = date('d-m-Y');
+    return apply_filters('plus_one_day', $current_day);
+}
+add_shortcode('current_day', 'wp1_current_day_shortcode');
+
+// Enable shortcodes in post titles
+add_filter('the_title', 'do_shortcode');
+
+
+function add_body_classes($classes): array
+{
+    if (is_home() || is_front_page()) {
+        $classes[] = 'hey-dude-it-is-blog';
+    }
+
+    return $classes;
+}
+add_filter('body_class', 'add_body_classes');

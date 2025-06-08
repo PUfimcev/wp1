@@ -6,7 +6,7 @@
 
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <header>Header</header>
 <main class="main">
