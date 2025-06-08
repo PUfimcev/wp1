@@ -6,7 +6,6 @@
     </option>
   </component>
   <component name="LaravelIdeaMainSettings">
-    <option name="frameworkFound" value="true" />
     <option name="laravelBasePath" value="wp-content/plugins/elementor/vendor_prefixed/dependency-injection/laravel/serializable-closure" />
   </component>
 </project>
