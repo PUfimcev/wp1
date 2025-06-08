@@ -1,1 +1,5 @@
-/.idea
+# MacOS system files
+.DS_Store
+
+# IDE settings
+.idea/
