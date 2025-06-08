@@ -44,3 +44,9 @@ add_filter( 'get_the_archive_title', function( $title ){
 add_filter( 'excerpt_length', function(){
     return 20;
 } );
+
+function add_styles(): void
+{
+    wp_enqueue_style('header_style', get_template_directory_uri() . '/assets/css/critical.css', array(), false, 'all');
+}
+add_action('wp_enqueue_scripts', 'add_styles');
