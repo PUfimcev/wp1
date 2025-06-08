@@ -1,6 +1,6 @@
 </main>
-<footer >Footer</footer>
+<footer class="footer">Footer</footer>
+<?php do_action('load-assets-in-footer'); ?>
 <?php wp_footer(); ?>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 </body>
 </html>

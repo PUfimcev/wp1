@@ -50,3 +50,18 @@ function add_styles(): void
     wp_enqueue_style('header_style', get_template_directory_uri() . '/assets/css/critical.css', array(), false, 'all');
 }
 add_action('wp_enqueue_scripts', 'add_styles');
+
+function load_assets_in_footer(): void
+{
+    wp_enqueue_style('footer_style', get_template_directory_uri() . '/assets/css/style.css', array(), false, 'all');
+}
+add_action('load-assets-in-footer', 'load_assets_in_footer');
+
+
+function add_one_day($date): string
+{
+    $date = strtotime($date);
+    $date = strtotime('+1 day', $date);
+    return date('d F Y', $date);
+}
+add_filter('the_date', 'add_one_day');
