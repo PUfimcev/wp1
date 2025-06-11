@@ -84,3 +84,4 @@ function add_body_classes($classes): array
     return $classes;
 }
 add_filter('body_class', 'add_body_classes');
+

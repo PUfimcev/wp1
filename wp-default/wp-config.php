@@ -14,19 +14,18 @@ define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 
 /** Authentication Unique Keys and Salts. */
-define( 'AUTH_KEY', 'CzEpoUxIOoTknFtNrBudrZIKhkHVFNWVncolkODrVwnxfpqVUdXeOgWuvebwBehN' );
-define( 'SECURE_AUTH_KEY', 'rbFwtVqiAtLqzLcffnGSRRDvIWkAyHZOcLuvmUTuNHkrpGanJXGBzidJetBCYJqw' );
-define( 'LOGGED_IN_KEY', 'WKatpibVdaSnUCPYOemGDxBrQzBrhUWbKdNcyXnKsMHJyaZCmcgHBxcaTbQQVOCC' );
-define( 'NONCE_KEY', 'LPnLdSJlIsvrNChjHaPkQClpcBUODIuLYAizfcTyxVUoITnqMmeIOoShSIoyBgYQ' );
-define( 'AUTH_SALT', 'iEKpVjEjVqZdrYRikQGTGLXTEyROHPxFBXHmXBOYrEJJdybjtsonPhfuTVYQFdjs' );
-define( 'SECURE_AUTH_SALT', 'fbhRMZnKuEyQYXUhBbQQDVAfMWUTJzvKnfUfWaZZgKitKDfjOfSDGSZFXxgFGZiA' );
-define( 'LOGGED_IN_SALT', 'BrCOeAAJDeuNvrmlWsLnrfebgrVnNlYFjTwAhtjGdWyrlgnNfZcTmOVCZVKwPKWT' );
-define( 'NONCE_SALT', 'IIolpvusTPjAfpANsxHztOEaDguIrKVEEHOIEMSJTbhLxTPcMvhUMZMObpVVkZky' );
+define( 'AUTH_KEY', 'LZesUYOXYQUSdAuMTxkxvtNpVSgrkMJWcEeskPEsLBGTvhpclfjtiXeqWodtEzTx' );
+define( 'SECURE_AUTH_KEY', 'OFGamNQVmXbIcoqScBZmRTqqNmuttvvHaxumWfnVlcQHgsVEwDcnUjFGPwnvrETe' );
+define( 'LOGGED_IN_KEY', 'rGMVkRCYqeScnlxboxMugpapmIRMyuAfKNwQtgYLolYoBDIYMQmhrkFQbUJHjItO' );
+define( 'NONCE_KEY', 'bLdUuxdxlMOupVJBghQPjAlwTmgePPaNVzpOBENNheQUHlyUFpOLptPZoEBdspeE' );
+define( 'AUTH_SALT', 'INZgfNJEttvqfYHHyxdzOrcohmOHMrJahMOYtVIvibcTpSYAmfBVTJNfBhvQquZc' );
+define( 'SECURE_AUTH_SALT', 'SapPqJVBpEKZJccSZmjxnDCuYsJNheTRCNpMQPTiTuJvsAhXofaRpcaNGYfSWTrC' );
+define( 'LOGGED_IN_SALT', 'hZRxPjpDOepkaQiRrzZXUjIqUzMYXockmUraucIkZVXlqXkEVDAeGfWqELDkYnip' );
+define( 'NONCE_SALT', 'ntwvJgwCwveARfPhktIQVyQQtkvKhWIfYWJvxQrzAEgTdNyCHlohyLgEKuAwyipF' );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
 
-define( 'WP_DEBUG', true );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -43,5 +42,3 @@ if ( ! defined( 'DB_USER' ) && getenv( 'IS_DDEV_PROJECT' ) == 'true' && is_reada
 if ( file_exists( ABSPATH . '/wp-settings.php' ) ) {
 	require_once ABSPATH . '/wp-settings.php';
 }
-
-
