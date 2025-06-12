@@ -1,4 +1,6 @@
 <?php
+
+require_once __DIR__ . '/acf_functions.php';
 function wp1_setup(): void
 {
 
@@ -84,4 +86,3 @@ function add_body_classes($classes): array
     return $classes;
 }
 add_filter('body_class', 'add_body_classes');
-
