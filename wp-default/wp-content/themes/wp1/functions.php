@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/acf_functions.php';
+require_once get_template_directory() . '/acf_functions.php';
+
+new ACF_Custom_Fields();
 function wp1_setup(): void
 {
 
