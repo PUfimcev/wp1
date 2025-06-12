@@ -1,4 +1,6 @@
 <?php
+
+require_once __DIR__ . '/acf_functions.php';
 function wp1_setup(): void
 {
 
